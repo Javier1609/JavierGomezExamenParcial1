@@ -3,31 +3,34 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 2vh; /* Ajusta el padding proporcionalmente */
     background-color: #007bff; /* Fondo azul */
     color: white;
-    width: calc(100% - 220px); /* Ajusta el ancho para que no se superponga con la barra lateral */
-    margin-left: 220px; /* Mueve el encabezado a la derecha para que no esté detrás del menú */
+    width: calc(100% - 16vw); /* Ajusta el ancho proporcionalmente */
+    margin-left: 16vw; /* Mueve el encabezado a la derecha proporcionalmente */
 }
 
 .header-logo {
-    height: 60px; /* Ajusta el tamaño según sea necesario */
+    height: 6vh; /* Ajusta el tamaño proporcionalmente */
     background-color: transparent; /* Asegura que el fondo de la imagen sea transparente */
+    margin-left: 0; /* Centra la imagen */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro de su contenedor */
 }
 
 .header h1 {
-    font-size: 1.5rem;
+    font-size: 2vh; /* Ajusta el tamaño de la fuente proporcionalmente */
     margin: 0; /* Elimina el margen */
 }
 
 .header p {
-    font-size: 1.2rem; /* Hacer el texto un poco más grande */
+    font-size: 1.5vh; /* Ajusta el tamaño de la fuente proporcionalmente */
     margin: 0; /* Elimina el margen */
     text-align: center; /* Centra el texto */
     flex: 1; /* Permite que el texto ocupe el espacio disponible */
@@ -37,10 +40,11 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px; /* Ajusta el ancho de la barra lateral */
+    width: 15vw; /* Reduce el ancho de la barra lateral */
     height: 100%;
     background-color: #000;
-    padding-top: 20px;
+    padding-top: 2vh; /* Ajusta el padding superior proporcionalmente */
+    margin-right: 1vw; /* Añade un margen derecho */
 }
 
 .sidebar ul {
@@ -49,13 +53,13 @@ body {
 }
 
 .sidebar ul li {
-    margin: 10px 0; /* Reduce el margen entre los elementos */
+    margin: 1vh 0; /* Ajusta el margen entre los elementos proporcionalmente */
 }
 
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px; /* Reduce el padding */
+    padding: 1vh; /* Ajusta el padding proporcionalmente */
     display: block;
     text-align: left;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -67,28 +71,28 @@ body {
 }
 
 .main-content {
-    margin-left: 220px; /* Ajustar para el ancho de la barra lateral */
-    padding: 10px; /* Reduce el padding */
+    margin-left: 16vw; /* Ajusta para el ancho de la barra lateral proporcionalmente */
+    padding: 2vh; /* Ajusta el padding proporcionalmente */
     flex: 1;
-    min-width: calc(100% - 240px); /* Asegurar que el contenido principal se ajuste al monitor */
-    margin-top: 20px; /* Añadir un margen superior para separación */
+    width: calc(100% - 16vw); /* Asegura que el contenido principal se ajuste al monitor proporcionalmente */
+    margin-top: 2vh; /* Añade un margen superior proporcionalmente */
 }
 
 .product-section {
-    margin-bottom: 20px; /* Reduce el margen inferior */
+    margin-bottom: 2vh; /* Ajusta el margen inferior proporcionalmente */
 }
 
 .product-section h2 {
-    font-size: 1.5rem;
+    font-size: 2vh; /* Ajusta el tamaño de la fuente proporcionalmente */
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 1vh; /* Ajusta el margen inferior proporcionalmente */
 }
 
 .product {
     background-color: #e9e9e9;
-    padding: 10px; /* Reduce el padding */
+    padding: 1vh; /* Ajusta el padding proporcionalmente */
     border-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 1vh; /* Ajusta el margen inferior proporcionalmente */
     transition: transform 0.3s;
 }
 
@@ -98,16 +102,17 @@ body {
 }
 
 .product h3 {
-    font-size: 1.2rem;
+    font-size: 1.5vh; /* Ajusta el tamaño de la fuente proporcionalmente */
     color: #0056b3;
 }
 
 .footer {
     background-color: #333;
     color: #ccc;
-    padding: 10px; /* Reduce el padding */
+    padding: 2vh; /* Ajusta el padding proporcionalmente */
     text-align: center;
     width: 100%;
+    font-size: 1.5vh; /* Ajusta el tamaño de la fuente proporcionalmente */
 }
 
 .footer a {
@@ -162,37 +167,37 @@ body {
 
     .main-content {
         margin-left: 0;
-        padding: 10px;
+        padding: 2vh;
     }
 
     .product-section h2 {
-        font-size: 1.2rem;
+        font-size: 1.5vh; /* Ajusta el tamaño de la fuente proporcionalmente */
     }
 
     .product h3 {
-        font-size: 1rem;
+        font-size: 1.2vh; /* Ajusta el tamaño de la fuente proporcionalmente */
     }
 }
 
 @media (max-width: 480px) {
     .header h1 {
-        font-size: 1.5rem;
-        margin: 10px 0;
+        font-size: 2vh; /* Ajusta el tamaño de la fuente proporcionalmente */
+        margin: 1vh 0; /* Ajusta el margen proporcionalmente */
     }
 
     .header p {
-        font-size: 0.9rem;
+        font-size: 1.2vh; /* Ajusta el tamaño de la fuente proporcionalmente */
     }
 
     .main-logo {
-        height: 50px;
+        height: 4vh; /* Ajusta el tamaño de la imagen proporcionalmente */
     }
 
     .product {
-        padding: 10px;
+        padding: 1vh; /* Ajusta el padding proporcionalmente */
     }
 
     .footer {
-        padding: 10px;
+        padding: 2vh; /* Ajusta el padding proporcionalmente */
     }
 }
