@@ -1,26 +1,8 @@
-/* General Settings */
-* {
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Markazi Text', serif;
-}
-
-body {
-    display: flex;
-    min-height: 100vh;
-    background-color: #f4f4f4;
-    color: #333;
-    flex-direction: column;
-}
-
-.logo-container {
-    text-align: center;
-    padding: 10px;
-}
-
-.main-logo {
-    height: 80px; /* Aumentar el tamaño del logotipo principal */
 }
 
 .header {
@@ -28,30 +10,33 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #007bff;
+    background-color: #007bff; /* Fondo azul */
     color: white;
     width: 100%;
 }
 
 .header-logo {
-    height: 50px; /* Tamaño del logotipo del encabezado */
+    height: 60px; /* Ajusta el tamaño según sea necesario */
+    background-color: transparent; /* Asegura que el fondo de la imagen sea transparente */
 }
 
 .header h1 {
     font-size: 1.5rem;
-    margin-left: 220px; /* Mover el título a la derecha para que no esté oculto */
+    margin: 0; /* Elimina el margen */
 }
 
 .header p {
     font-size: 1.2rem; /* Hacer el texto un poco más grande */
-    margin: 0 auto;
+    margin: 0; /* Elimina el margen */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Permite que el texto ocupe el espacio disponible */
 }
 
 .sidebar {
     position: fixed;
     left: 0;
     top: 0;
-    width: 200px;
+    width: 180px; /* Reduce el ancho de la barra lateral */
     height: 100%;
     background-color: #000;
     padding-top: 20px;
@@ -63,13 +48,13 @@ body {
 }
 
 .sidebar ul li {
-    margin: 15px 0;
+    margin: 10px 0; /* Reduce el margen entre los elementos */
 }
 
 .sidebar ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px; /* Reduce el padding */
     display: block;
     text-align: left;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -81,20 +66,14 @@ body {
 }
 
 .main-content {
-    margin-left: 220px; /* Ajustar para el ancho de la barra lateral */
-    padding: 20px;
+    margin-left: 200px; /* Ajustar para el ancho de la barra lateral */
+    padding: 10px; /* Reduce el padding */
     flex: 1;
-    min-width: calc(100% - 240px); /* Asegurar que el contenido principal se ajuste al monitor */
-}
-
-.main-header {
-    text-align: center; /* Centrar el título "Comparativa de Productos" */
-    font-size: 2rem; /* Ajustar el tamaño del texto si es necesario */
-    margin-top: 20px; /* Añadir un margen superior para separación */
+    min-width: calc(100% - 200px); /* Asegurar que el contenido principal se ajuste al monitor */
 }
 
 .product-section {
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Reduce el margen inferior */
 }
 
 .product-section h2 {
@@ -105,7 +84,7 @@ body {
 
 .product {
     background-color: #e9e9e9;
-    padding: 15px;
+    padding: 10px; /* Reduce el padding */
     border-radius: 5px;
     margin-bottom: 10px;
     transition: transform 0.3s;
@@ -124,7 +103,7 @@ body {
 .footer {
     background-color: #333;
     color: #ccc;
-    padding: 20px;
+    padding: 10px; /* Reduce el padding */
     text-align: center;
     width: 100%;
 }
@@ -194,7 +173,7 @@ body {
 @media (max-width: 480px) {
     .header h1 {
         font-size: 1.5rem;
-        margin-left: 220px;
+        margin: 10px 0;
     }
 
     .header p {
