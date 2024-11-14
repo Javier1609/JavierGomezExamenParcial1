@@ -12,7 +12,8 @@ body {
     padding: 10px;
     background-color: #007bff; /* Fondo azul */
     color: white;
-    width: 100%;
+    width: calc(100% - 220px); /* Ajusta el ancho para que no se superponga con la barra lateral */
+    margin-left: 220px; /* Mueve el encabezado a la derecha para que no esté detrás del menú */
 }
 
 .header-logo {
@@ -36,7 +37,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    width: 180px; /* Reduce el ancho de la barra lateral */
+    width: 200px; /* Ajusta el ancho de la barra lateral */
     height: 100%;
     background-color: #000;
     padding-top: 20px;
@@ -66,10 +67,11 @@ body {
 }
 
 .main-content {
-    margin-left: 200px; /* Ajustar para el ancho de la barra lateral */
+    margin-left: 220px; /* Ajustar para el ancho de la barra lateral */
     padding: 10px; /* Reduce el padding */
     flex: 1;
-    min-width: calc(100% - 200px); /* Asegurar que el contenido principal se ajuste al monitor */
+    min-width: calc(100% - 240px); /* Asegurar que el contenido principal se ajuste al monitor */
+    margin-top: 20px; /* Añadir un margen superior para separación */
 }
 
 .product-section {
@@ -142,6 +144,8 @@ body {
     .header {
         flex-direction: column;
         text-align: center;
+        width: 100%;
+        margin-left: 0;
     }
 
     .sidebar {
